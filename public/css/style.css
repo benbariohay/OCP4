@@ -1,0 +1,780 @@
+body{
+    margin: 0px;
+}
+
+/* ----------------------------------------- */
+/* --------------- FRONTEND ---------------- */
+/* ----------------------------------------- */
+
+/* -------------- Main page ---------------- */
+#homeimg{
+    position: relative;
+    width: 100%;
+    height: 546px;
+    margin-bottom: 70px;
+    background: no-repeat center/135% url(../images/alaska.jpg);
+}
+
+#homeimg img{
+    width: 100%;
+    
+}
+
+#small-device-img{
+    visibility: hidden;
+}
+
+#title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#title p{
+    width: 70%;
+    border-top: 1px solid white;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 10px;
+}
+
+h1
+{
+    text-align:center;
+    font-size: 4em;
+    font-family: 'Lora', serif;;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.chapter-block
+{
+    width:70%;
+    margin: 30px auto;
+    border: 2px solid #47697D;
+    border-radius: 3px;
+    padding: 0 30px;
+}
+
+.chapter-block h3 {
+    font-size: 2.2em;
+    font-family: 'Amiri', serif;
+    text-align: center;
+    margin: 10px auto;
+    padding-bottom: 10px;
+    width: 70%;
+    border-bottom: 1px solid #CBBEA8;
+}
+
+.chapter-block p
+{
+    margin-top: 10px;
+    font-family: 'Amiri', sans-serif;
+    font-size: 1.1em;
+}
+
+.content-block{
+    height: 200px;
+    overflow: hidden;
+}
+
+#arrow {
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    display: none;
+}
+
+i{
+    background-color: white;
+    color: #47697D;
+    font-size: 3em;
+    border-radius: 50px;
+}
+
+i:hover {
+    opacity: 0.7;
+    transition-duration: 0.5s;
+}
+
+/* ----------------- Links ----------------- */
+
+.front-link
+{
+    text-decoration: none;
+    font-weight: 600;
+    color: #47697D;
+    font-size: 1.2em;
+    font-family: 'Amiri', sans-serif;
+}
+
+.front-link:hover
+{
+    color: #CBBEA8;
+    transition: 0.3s ;
+}
+
+#frontlink {
+    margin-left: 20px;
+}
+
+/* ----------------- Footer + Login Link ----------------- */
+
+footer {
+    height: 40px;
+    background-color: #47697D;
+    display: flex;
+    margin-top: 60px;
+}
+
+footer a {
+    color: #CBBEA8;
+    text-decoration: none;
+}
+
+#login{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+/* ----------------- PostView ----------------- */
+
+.banner {
+    /* height: 300px; */
+}
+
+.banner img {
+    width: 100%;
+}
+
+#reported-com {
+    color: #f28282;
+}
+
+.content-block-post {
+    overflow: visible;
+}
+
+.block-comments{
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid #47697D;
+}
+
+.block-comments p{
+    margin: 20px 20px 20px 20px;
+}
+
+.block-comments strong {
+    font-weight: 600;
+    color: #47697D;
+    font-size: 1.2em;
+    font-family: 'Amiri', sans-serif;
+}
+
+#add-viewComment {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+h2{
+    width: 20%;
+    margin-top: 60px;
+    font-family: 'Amiri', sans-serif;
+    color: #47697D;
+    font-size: 1.8em;
+    border-bottom: 1px solid #CBBEA8;
+}
+
+.separate-line {
+    border-top: 0.5px solid #CBBEA8;
+    width: 150px;
+    margin-left: 10px;
+}
+
+#show-button {
+    background-color: #CBBEA8;
+    border-radius: 3px;
+    border: 2px solid #47697D;
+    color: #47697D;
+    font-family: 'Amiri', sans-serif;
+    font-size: 1.2em;
+    margin-top: 60px;
+    margin-right: 20px;
+    padding: 0 15px;
+    height: 50px;
+}
+
+#show-button:hover {
+    background-color: #47697D;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+#addComment-form {
+    display: none;
+}
+
+/* ----------------------------------------- */
+/* --------------- BACKEND ----------------- */
+/* ----------------------------------------- */
+
+
+/* --------------- Header ------------------ */
+header{
+    height: 100px;
+    background-color: #47697D;
+    box-shadow: 0 2px 0px 0 rgba(0,0,0,0.14);
+    margin-bottom: 70px;
+}
+
+#logout-btn {
+    padding: 10px 10px 0 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#logout-btn a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Amiri', sans-serif;
+    font-size: 1.1em;
+}
+
+#logout-btn a:hover {
+    color: #CBBEA8;
+}
+
+ul{
+    width: 90%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 20px auto 0 auto;
+}
+
+ul a {
+    text-decoration: none;
+    color: #CBBEA8;
+    padding: 20px 10px;
+    font-family: 'Amiri', sans-serif;
+    font-size: 1.2em;
+}
+
+ul a:hover {
+    color: white;
+    transition: 0.4s;
+}
+
+li {
+    width: 200px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+#menuToggle input, #menuToggle span
+	{
+		display: none;
+	}
+
+/* ------------ Back Home View ------------ */
+
+#welcome {
+    width: 60%;
+    text-align: center;
+    margin: 250px auto 0 auto;
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+/* ------------ Back List Post View ------------ */
+
+#back-content-block {
+    height: 200px;
+    overflow: hidden;
+}
+
+#editdeletelinks {
+    padding: 10px 0;
+}
+
+#buttonread {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#buttonhide {
+    display: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+/* ------------ Reported Comment View ------------ */
+
+.deletecom {
+    margin: 0 20px;
+}
+
+.delete {
+    margin-right: 10px;
+}
+
+#noreportedcom {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Amiri', sans-serif;
+    color: #CBBEA8;
+}
+
+/* ------------ Logout View ------------ */
+
+#logout-block {
+    width: 30%;
+    height: 200px;
+    margin: 200px auto;
+    text-align: center;
+    border: 1px solid #47697D;
+}
+
+#logout-block p{
+    color: #CBBEA8;
+    font-family: 'Amiri', serif;
+    font-size: 1.5em;
+    padding-top: 20px;
+}
+
+
+/* -------------------------------------------- */
+/* ----------------- FORMS -------------------- */
+/* -------------------------------------------- */
+
+.regular-form form{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 20px 0;
+}
+
+.regular-form form input{
+    width: 400px;
+    height: 30px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    
+}
+
+.regular-form form textarea{
+    width: 400px;
+    height: 100px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.regular-form input[type=submit] {
+    height: 50px;
+}
+
+input[type=submit] {
+    background-color: #CBBEA8;
+    border-radius: 3px;
+    border: 2px solid #47697D;
+    color: #47697D;
+    font-family: 'Amiri', sans-serif;
+    font-size: 1.3em;
+    margin-top: 10px;
+    height: 50px;
+}
+
+input[type=submit]:hover {
+    background-color: #47697D;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+label{
+    font-family: 'Amiri', sans-serif;
+    color: #47697D;
+    font-size: 1.4em;
+    border-bottom: 1px solid #CBBEA8;
+}
+
+
+/* -------------------- Login Form ------------------------ */
+
+#login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #47697D;
+    border-radius: 3px;
+    padding: 50px 0;
+    width: 500px;
+}
+
+#login-form input[type=submit]{
+    margin-top: 40px;
+}
+
+/* -------------------- Create/Modify Post Form ------------------------ */
+
+#create-title {
+    width: 80%;
+    margin: 60px auto 0 auto;
+    font-family: 'Amiri', sans-serif;
+    color: #47697D;
+    font-size: 3em;
+}
+
+#create-title-block { /* TITRE DU CHAPITRE */
+    width: 80%;
+    margin: auto;
+}
+
+#create-title-block input { /* FORM INPUT*/
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.tinymce label { /* REMOVE BORDER BOTTOM LABEL*/
+    border: 0;
+}
+
+#create-content-block {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.tinymce textarea {
+    height: 500px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+#create-submit-btn {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.tinymce input[type=submit] {
+    width: 300px;
+    border-radius: 3px;
+    margin: 40px auto;
+}
+
+/* -------------------- Form Errors / Confirmation ------------------------ */
+
+.form-errors p{
+    color: #f28282;
+    font-size: 1.2em;
+    font-family: 'Amiri', serif;
+    font-weight: 600;
+}
+
+.form-errors {
+    height: 50px;
+}
+
+#tinyform-errors {
+    text-align: center;
+}
+
+.form-confirmation {
+    color: #56ce5c;
+    font-size: 1.2em;
+    font-family: 'Amiri', serif;
+    font-weight: 600;
+}
+
+/* -------------------------------------------- */
+/* --------------- EXCEPTIONS ----------------- */
+/* -------------------------------------------- */
+
+#exception {
+    width: 40%;
+    height: 220px;
+    margin: 200px auto;
+    text-align: center;
+    border: 2px solid #f28282;
+    border-radius: 3px;
+    font-family: 'Amiri', serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#exception p {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+/* -------------------------------------------- */
+/* -------------- MEDIA QUERIES --------------- */
+/* -------------------------------------------- */
+
+@media all and (max-width: 960px)
+{
+    /* -------------- Main Page ------------- */
+    h1{
+        font-size: 3em;
+    }
+
+    #title p{
+        width: 70%;
+        border-top: 1px solid white;
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    #homeimg{
+        margin-bottom: 0;
+        background: no-repeat center/190% url(../images/alaska_smalldevices.jpg);
+    }
+
+    #main-img{
+        visibility: hidden;
+    }
+
+    #small-device-img{
+        visibility: hidden;
+    }
+
+    #arrow {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /* -------------------- Login Form ------------------------ */
+    #login-form {
+        width: 400px;
+    }
+
+    #login-form input{
+        width: 300px;
+    }
+
+    /* -------------------- Login Form ------------------------ */
+    #logout-block {
+        width: 60%;
+    }
+
+    /* -------------------- Back End ------------------------ */
+    #welcome {
+        margin: 160px auto 0 auto;
+        font-size: 1.8em;
+    }
+
+    /* Burger Menu -----------------*/
+
+	#menuToggle
+	{
+	  display: block;
+	  position: relative;
+	  top: 50px;
+	  left: 50px;
+	  
+	  z-index: 1;
+	  
+	  -webkit-user-select: none;
+	  user-select: none;
+	}
+
+	#menuToggle input
+	{
+	  display: block;
+	  width: 50px;
+	  height: 50px;
+	  position: absolute;
+	  top: -70px;
+      left: -30px; 
+	  
+	  cursor: pointer;
+	  
+	  opacity: 0; 
+	  z-index: 2; 
+	  
+	  -webkit-touch-callout: none;
+	}
+
+	#menuToggle span
+	{
+	  display: block;
+	  width: 33px;
+	  height: 4px;
+	  margin-bottom: 5px;
+	  position: relative;
+	  top: -50px;
+	  left: -20px; 
+	  
+	  background: #CBBEA8;
+	  border-radius: 3px;
+	  
+	  z-index: 1;
+	  
+	  transform-origin: 4px 0px;
+	  
+	  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+	              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+	              opacity 0.55s ease;
+	}
+
+	#menuToggle span:first-child
+	{
+	  transform-origin: 0% 0%;
+	}
+
+	#menuToggle span:nth-last-child(2)
+	{
+	  transform-origin: 0% 100%;
+	}
+
+	#menuToggle input:checked ~ span
+	{
+	  opacity: 1;
+	  transform: rotate(45deg) translate(-2px, -1px);
+	  background: #CBBEA8;
+	}
+
+	#menuToggle input:checked ~ span:nth-last-child(3)
+	{
+	  opacity: 0;
+	  transform: rotate(0deg) scale(0.2, 0.2);
+	}
+
+	#menuToggle input:checked ~ span:nth-last-child(2)
+	{
+	  transform: rotate(-45deg) translate(0, -1px);
+	}
+
+	#menu
+	{
+	  position: absolute;
+	  width: 10%;
+	  margin: -120px 0 0 -100px;
+	  padding: 110px;
+	  padding-top: 185px;
+      padding-bottom: 200px;
+      flex-direction: column;
+	  
+      background: #47697D;
+	  list-style-type: none;
+	  -webkit-font-smoothing: antialiased;
+	  
+	  transform-origin: 0% 0%;
+	  transform: translate(-100%, 0);
+	  
+	  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+	}
+
+	#menu li
+	{
+      font-size: 16px;
+      margin-left: -55px;
+      margin-bottom: 20px;
+	}
+
+	#menuToggle input:checked ~ ul
+	{
+	  transform: none;
+    }
+    
+    /* --------------- Exceptions ----------------- */
+    #exception {
+        width: 60%;
+        font-size: 1.2em;
+    }
+
+    #exception p {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media all and (max-width: 500px){
+
+    /* ----------------- Main page ----------------- */
+
+    #title p {
+        text-align: center;
+    }
+
+    /* ----------------- PostView ----------------- */
+    #add-viewComment {
+        display: block;
+    }
+
+    #show-button-block{
+        display: flex;
+        justify-content: center;
+    }
+    #show-button {
+        border-radius: 3px;
+        font-size: 1em;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin: 0 0 10px 0;
+        padding: 0 20px;
+        height: 35px;
+    }
+
+    .regular-form form input{
+        width: 300px;
+    }
+    
+    .regular-form form textarea{
+        width: 300px;
+    }
+
+    /* -------------------- Login Form ------------------------ */
+    #login-form {
+        width: 300px;
+    }
+
+    #login-form input{
+        width: 250px;
+    }
+
+    /* -------------------- Login Form ------------------------ */
+    #logout-block {
+        width: 70%;
+    }
+    
+    #logout-block p{
+        color: #CBBEA8;
+        font-size: 1.3em;
+        padding-top: 40px;
+    }
+
+    /* -------------------- Back End ------------------------ */
+    #welcome {
+        margin: 120px auto 0 auto;
+        font-size: 1.6em;
+    }
+
+    .front-link {
+        font-size: 1em;
+    }
+
+}
